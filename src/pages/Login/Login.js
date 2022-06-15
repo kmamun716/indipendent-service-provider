@@ -11,9 +11,7 @@ const Login = () => {
     });
     const [
         signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
+        user
     ] = useSignInWithEmailAndPassword(auth);
     const handleChange=e=>{
         setLoggedUser({
