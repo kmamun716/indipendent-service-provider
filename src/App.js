@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import About from './pages/About/About';
 import Checkout from './pages/Checkout/Checkout';
-import Home from './pages/Home/Home/Home';
+import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
 import Register from './pages/Register/Register';

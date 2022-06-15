@@ -9,7 +9,7 @@ const Header = () => {
     const location = useLocation();
     return (
         <header>
-            <Navbar bg="primary" variant="dark">
+            <Navbar bg="primary" className='rounded mt-2' variant="dark">
                 <Container>
                     <LinkContainer to='/'>
                         <Navbar.Brand>Biography Writer</Navbar.Brand>
