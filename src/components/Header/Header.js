@@ -15,8 +15,11 @@ const Header = () => {
                         <Navbar.Brand>Biography Writer</Navbar.Brand>
                     </LinkContainer>
                     <Nav className="me-auto">
-                        <LinkContainer to='/about-us'>
+                        <LinkContainer to='/about-me'>
                             <Nav.Link>About</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to='/blog'>
+                            <Nav.Link>Blog</Nav.Link>
                         </LinkContainer>
                         {
                             user ? <Nav.Link onClick={()=>signOut(auth)}>Log Out</Nav.Link> : 

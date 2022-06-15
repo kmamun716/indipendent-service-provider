@@ -13,7 +13,7 @@ const CardSection = ({cardItem}) => {
                 key='light'
                 text='dark'
                 style={{ width: '18rem' }}
-                className="m-2"
+                className={title.includes("Special")?"mx-2 mb-5":"mx-2 my-5"}
             >
                 <Card.Header>{title}</Card.Header>
                 {
@@ -26,7 +26,7 @@ const CardSection = ({cardItem}) => {
                 <Card.Footer>
                     <small className={ title.includes("Special") ? "fw-bold text-primary" : "text-success" }>Price: ${price}</small>
                 </Card.Footer>
-                <Button variant='outline-success' onClick={()=>navigate('/checkout',{item: {"hello":"yes"} })} >Order Now</Button>
+                <Button variant={title.includes("Special")?'outline-primary':'outline-success'} onClick={()=>navigate('/checkout',{item: {"hello":"yes"} })} >Order Now</Button>
             </Card> 
         </>
     );
