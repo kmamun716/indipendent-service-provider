@@ -9,6 +9,7 @@ const Register = () => {
         email:"",
         password:""
     });
+    const [checked, setChecked] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
@@ -44,9 +45,9 @@ const Register = () => {
                     <Form.Control onChange={handleChange} type="password" name="password" placeholder="Password" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+                    <Form.Check type="checkbox" onChange={() => setChecked(!checked)} label="Agree to Register" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" disabled={checked? false: true} type="submit">
                     Register
                 </Button>
             </Form>

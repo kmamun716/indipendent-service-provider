@@ -12,11 +12,11 @@ const Services = () => {
                 },
                 {
                     title: "Father Biography",
-                    status: true
+                    status: false
                 },
                 {
                     title: "Mother Biography",
-                    status: true
+                    status: false
                 },
                 {
                     title: "14 gushtir Biography",
@@ -39,17 +39,40 @@ const Services = () => {
                 },
                 {
                     title: "Mother Biography",
-                    status: true
+                    status: false
                 },
                 {
                     title: "14 gushtir Biography",
-                    status: true
+                    status: false
                 }
             ],
             price: 300            
         },
         {
             id:3,
+            title:"Special Plan",
+            description:[
+                {
+                    title: "Only Biography",
+                    status: true
+                },
+                {
+                    title: "Father Biography",
+                    status: true
+                },
+                {
+                    title: "Mother Biography",
+                    status: true
+                },
+                {
+                    title: "14 gushtir Biography",
+                    status: false
+                }
+            ],
+            price: 350            
+        },
+        {
+            id:4,
             title:"Super Plan",
             description:[
                 {
@@ -58,15 +81,15 @@ const Services = () => {
                 },
                 {
                     title: "Father Biography",
-                    status: false
+                    status: true
                 },
                 {
                     title: "Mother Biography",
-                    status: false
+                    status: true
                 },
                 {
                     title: "14 gushtir Biography",
-                    status: false
+                    status: true
                 }
             ],
             price: 500           
